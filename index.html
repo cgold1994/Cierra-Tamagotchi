@@ -10,22 +10,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poiret+One&display=swap" rel="stylesheet">
 </head>
 <body>
-      <!-- <h1>Hi, i'm Blue! </h1> -->
-      <section id="page">
-        <header>Hi, i'm Blue!</header>
-        <main>
-           <img src ="images/white-kitten.png" alt="a white kitten" 
-          width="350"
-          height="350"
-          />
-          <h3>
-            brief paragraph explaining name, age, and basic instructions.
+  <div class="flex-container">
+  <div class="flex-child one">
+    <header>
+      <h1>Hi,i'm Blue !</h1>
+    </header>
+    <input type="username" placeholder="What's your name?">
+    <input type="submit">
+    <img src ="images/white-kitten.png" alt="a white kitten" 
+       width="300"
+       height="300"
+      />
+  </div>
+    <div class="flex-child two">
+     <h3>
+       brief paragraph explaining name, age,<br> and basic     instructions.
           </h3>
         <p id ="count">Hunger:0</p>
         <p id ="count">Boredom:0</p>
         <p id ="count">Sleepiness:0</p>
           
-           </main>
+  </div>
+  
+</div>
         <footer>
             <div class="actions">
                 <button id="feed">Feed Me</button>
@@ -33,18 +40,6 @@
                 <button id="sleep">Night Night</button>
           </div>
         </footer>
-      </section>
-    
-   
-    <!-- <img src ="images/white-kitten.png" alt="a white kitten" 
-    width="350"
-    height="350"
-    /> -->
-    <!-- <div class="actions">
-          <button id="feed">Feed Me</button>
-          <button id="play">Let's Play</button>
-          <button id="sleep">Night Night</button>
-    </div> -->
       
 </body>
 </html>
