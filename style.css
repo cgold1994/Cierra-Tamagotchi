@@ -15,6 +15,7 @@ header {
 }
 
 input {
+    font-family: 'Playfair Display', serif;
     background:mediumaquamarine;
     border: 3;
     padding: 1px;
@@ -22,12 +23,14 @@ input {
 }
 
 input[type="submit"] {
-    background:navy;
+    background:rgb(48, 48, 126);
     color:white;
 }
 
 
 .flex-container {
+    font-family: 'Playfair Display', serif;
+    color:rgb(48, 48, 126);
     display: flex;
     gap: 5%;
 
@@ -49,23 +52,23 @@ input[type="submit"] {
 
 
 footer {
-      grid-area: foot;
- }
-
+    margin-bottom:10px;
+}
 
 
 button { 
-    background-color: mediumaquamarine;
-    border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
-    font-family: 'Playfair Display', serif;
-    color:rgb(48, 48, 126)
-    
+  background-color: mediumaquamarine;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-family: 'Playfair Display', serif;
+  color:rgb(48, 48, 126)
+     
 }
 
+
 button:hover {
-    cursor: pointer;
-    background-color:rgb(36, 94, 255)
+  cursor: pointer;
+  background-color:rgb(36, 94, 255)
 }
 
 
@@ -75,8 +78,4 @@ button:hover {
     text-align: center;
     font-size: 5rem;
     column-gap:40px;
-}
-
-footer {
-  grid-area: foot;
 }

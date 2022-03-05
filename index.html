@@ -10,36 +10,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poiret+One&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="flex-container">
+<div class="flex-container">
   <div class="flex-child one">
     <header>
       <h1>Hi,i'm Blue !</h1>
     </header>
-    <input type="username" placeholder="What's your nickname?">
-    <input type="submit">
     <img src ="images/white-kitten.png" alt="a white kitten" 
        width="300"
        height="300"
       />
-  </div>
-    <div class="flex-child two">
-     <h3>
-       brief paragraph explaining name, age,<br> and basic     instructions.
-          </h3>
-        <p id ="count">Hunger:0</p>
-        <p id ="count">Boredom:0</p>
-        <p id ="count">Sleepiness:0</p>
-          
-  </div>
-  
+ </div>
+ <div class="flex-child two">
+    <label>What's your nickname?</label><br>
+    <input type="username" id="myText"><br>
+    <button type="button" id="myButton">submit</button>
+    <h3>
+    brief paragraph explaining name, age,<br> and basic     instructions.
+    </h3>
+    <p id ="count">Hunger:0</p>
+    <p id ="count">Boredom:0</p>
+    <p id ="count">Sleepiness:0</p>
+ </div>
 </div>
-        <footer>
-            <div class="actions">
-                <button id="feed">Feed Me</button>
-                <button id="play">Let's Play</button>
-                <button id="sleep">Night Night</button>
-          </div>
-        </footer>
-      
+  <footer>
+    <div class="actions">
+      <button id="feedBtn">Feed Me</button>
+      <button id="playBtn">Let's Play</button>
+      <button id="sleepBtn">Night Night</button>
+    </div>
+  </footer>
 </body>
 </html>
