@@ -27,7 +27,9 @@ input[type="submit"] {
     color:white;
 }
 
-
+h3 {
+    animation:blink .5s step-end;
+}
 .flex-container {
     font-family: 'Playfair Display', serif;
     color:rgb(48, 48, 126);
@@ -53,6 +55,11 @@ input[type="submit"] {
 
 footer {
     margin-bottom:10px;
+    display:flex;
+    align-items:flex-end;
+    text-align: center;
+    font-size: 5rem;
+    column-gap:40px;
 }
 
 
@@ -72,10 +79,10 @@ button:hover {
 }
 
 
-.actions {
+/* .actions {
     display:flex;
     align-items:flex-end;
     text-align: center;
     font-size: 5rem;
     column-gap:40px;
-}
+} */
