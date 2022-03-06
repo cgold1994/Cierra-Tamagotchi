@@ -24,10 +24,19 @@
     <label>What's your nickname?</label><br>
     <input type="username" id="myText"><br>
     <button type="button" id="myButton">submit</button>
-    <h3>
+    <p id ="demo">
+    <!-- <h3>
       Hey! I'm so happy that you're here to<br> keep me company.<br>
       In order to keep me happy and alive, try to keep my action levels at 10.
-    </h3>
+    </h3> -->
+    <script>
+      const element = document.getElementById("myButton");
+      element.addEventListener("click", myFunction);
+      
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Hey! I'm so happy that you're here to<br> keep me company.<br>In order to keep me happy and alive, try to keep my action levels at 10.";
+      }
+      </script>
     <p id ="count">Hunger:0</p>
     <p id ="count">Boredom:0</p>
     <p id ="count">Sleepiness:0</p>

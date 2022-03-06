@@ -13,3 +13,14 @@ class Tamagotchi {
     }
 }
 
+// $("#restart").hide();
+
+function startGame() {
+    grow();
+}
+
+function grow() {
+    if (myTamagotchi.age < 1) {
+        appear();
+    }
+}
