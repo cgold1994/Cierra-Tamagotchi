@@ -28,7 +28,7 @@ const element = document.getElementById("myButton");
       element.addEventListener("click", myFunction);
       
       function myFunction() {
-        document.getElementById("demo").innerHTML = "Hey! I'm so happy that you're here to<br> keep me company.<br>In order to keep me happy and alive, try to keep my action levels at 10.";
+        document.getElementById("demo").innerHTML = "Hey! I'm so happy that you're here! <br>In order to keep me happy and alive, try to keep my levels below 10.";
         myCounter = setInterval(function(){
             count++;
             stopCount()
