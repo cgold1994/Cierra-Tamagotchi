@@ -1,3 +1,4 @@
+// class created for tamagotchi pet
 class Tamagotchi {
     constructor(hunger, sleepiness, boredom, age) {
         this.hunger = hunger;
@@ -7,18 +8,11 @@ class Tamagotchi {
     }
 }
 
-// $("#restart").hide();
-
-// function startGame() {
-//     grow();
-// }
-
-
 
 let count = 0;
 let myCounter = null;
 
-
+// Dom elements
 const sleepCount = document.getElementById("countSleep")
 const hungerCount = document.getElementById("countHunger")
 const boredomCount = document.getElementById("countBoredom")
@@ -28,7 +22,7 @@ const buttonHunger = document.getElementById("feedBtn")
 const buttonBoredom = document.getElementById("playBtn")
 
 
-
+// functions to start game and decrease levels
 
 const element = document.getElementById("myButton");
       element.addEventListener("click", myFunction);
@@ -44,16 +38,26 @@ const element = document.getElementById("myButton");
           }, 1000);
         }
 
+// decrement the value of actions when buttons are pressed         
 function gotosleep () {
-
+    if (count >1 ){
+        count--
+      sleepCount.innerText= ("Sleepiness:" + count);
+     }
 }
 
 function icecream () {
-
+    if (count >1 ){
+        count--
+      hungerCount.innerText= ("Hunger:" + count);
+     }
 }
 
 function catnip () {
-
+    if (count >1 ){
+        count--
+      boredomCount.innerText= ("Boredom: " + count);
+     }
 }
 
 function stopCount() {
@@ -63,12 +67,10 @@ function stopCount() {
     else {
         return
     }
-  }
+}
 
 
-
-
-
+// onclick functions to elements
 buttonSleep.addEventListener("click", gotosleep);
 buttonHunger.addEventListener("click", icecream);
 buttonBoredom.addEventListener("click", catnip);
