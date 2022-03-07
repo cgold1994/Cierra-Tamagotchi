@@ -2,7 +2,7 @@ body {
     display:flex;
     flex-direction:column;
     align-items:center;
-    background-color: rgb(149, 208, 216);
+    background-color: rgb(201, 216, 133);
     font-style: 'Playfair Display', serif;
     gap: 5px;
 }
