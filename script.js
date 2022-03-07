@@ -43,7 +43,9 @@ function gotosleep () {
     if (count >1 ){
         count--
       sleepCount.innerText= ("Sleepiness:" + count);
-     }
+      sleepCount.innerText ="Are you furreal? Blue poofed away";
+      // if (hunger ==10 || boredom ==10 || sleep == 10)
+   }
 }
 
 function icecream () {
